@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#chocolates{
+				width:100%;
+				height:800px;
+				background-size:cover;
+
+			background-image:url(https://www.healthvalues.org/_cms/www/2016/07/Health-Care-is-Like-a-Box-of-Chocolates-WEB.jpg);
+			background-repeat: no-repeat;
+		}
+
+		#textbox{
+			width:500px;
+			height:100px;
+			background-color:rgb(255,255, 255);
+			top:70%;
+			position:relative;
+			left:30%;
+			font-size:40px;
+			text-align:center;
+			font-family:cardo;
+		}
+
+		body{
+			margin:0px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="chocolates">
+		
+		<div id='textbox'></div>
+
+	</div>
+
+	<script type="text/javascript">
+		
+		var scadaberator = document.getElementById('chocolates');
+
+		var box = document.getElementById("textbox");
+
+		scadaberator.addEventListener("click", function(){
+
+			box.innerText = "Don’t eat me :("
+
+		} )
+
+	</script>
+
+
+
+
+</body>
+</html>
