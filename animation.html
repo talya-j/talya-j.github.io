@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>splish splash</title>
+</head>
+
+
+
+<style type="text/css">
+	
+	#heading{
+		text-align:center;
+		font-style: bold;
+		font-size:155%;
+
+	}
+
+	#thalass{
+		text-align:center;
+		font-style: italic;
+		padding:5px;
+		font-size:110%;
+	}
+
+
+	#Submechanophobia{
+		text-align:center;
+		font-style: italic;
+		padding:3px;
+		font-size:110%;
+	}
+
+
+	body{
+		background-color:lightblue;
+
+		animation-name:changeBackground;
+		animation-duration:3.8s;
+		animation-iteration-count: 1;
+}
+
+		@keyframes changeBackground{
+
+		80%{
+			background-image: url(ocean.png)
+
+		}
+
+		100%{
+
+			background-image:url(closeWhale.jpeg);
+		}
+	}
+
+	#bottle{
+		position:relative;
+		width:100px;
+		height:150px;
+/*		background-color:lightblue;*/
+		border-radius:15%;
+		background-image:url(splash.png);
+		background-size:contain;
+/*		border-top:1px solid black;*/
+		top:700px;
+		background-repeat:no-repeat;
+
+		animation-name:drop;
+		animation-duration:3s;
+		animation-iteration-count: 1;
+}
+
+		@keyframes drop{
+
+		0%{
+				top:0px;
+				background-image:url(bottle.png);
+		}
+		
+		70%{
+			top:400px;
+			background-image:url(bottle.png);
+
+
+		}
+
+		82%{
+			top:500px;
+			
+		}
+
+		100%{
+			top: 600px;
+			background-image: url(splash.png);
+
+
+		}
+
+		}
+
+
+</style>
+
+<body>
+
+<div id="heading"><a href="https://www.youtube.com/watch?v=kem3aeUy3Bk">agua de beber</a></div>
+<div id="thalass"><a href="https://www.fearof.net/fear-of-the-ocean-phobia-thalassophobia/#:~:text=The%20word%20Thalassophobia%20comes%20from,fear%20of%20the%20vast%20emptiness.">θάλασσα φόβος</a></div>
+<div id="Submechanophobia"><a href="https://en.wikipedia.org/wiki/Submechanophobia">μηχανή φόβος</a></div>
+
+<center><div id="bottle"></div></center>
+
+<script type="text/javascript">
+
+	var title = document.getElementById("heading")
+
+	// function refresh (){
+	// 	location.reload();
+
+	// }
+
+	// h1.addEventListener("click", refresh)
+
+
+</script>
+</body>
+</html>

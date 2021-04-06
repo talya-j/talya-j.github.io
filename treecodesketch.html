@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trees are rad</title>
+</head>
+<h1>to tree, or not to tree?</h1>
+
+
+<style type="text/css">
+	h1{
+		font-style: italic;
+		text-align: center;
+		color: forestgreen;
+	}
+
+	#leaf{
+		background-image:url(https://www.pinclipart.com/picdir/middle/6-61361_leaves-leaf-free-download-clip-art-on-clipart.png);
+		background-size: contain;
+        background-repeat: no-repeat;
+
+        display: inline-block;
+        position: relative;
+
+		/*background-color:forestgreen;*/
+	}
+	#leaves-space{
+		height: 220px;
+		width: 500px;
+
+	}
+
+	#trunk{
+		background-color:#A0522D;
+		width: 100px;
+		height: 400px;
+		margin: 0 auto;
+	}
+
+</style>
+
+<body>
+
+
+<div id="leaves-space"></div>
+<div id="trunk"></div>
+
+<script type="text/javascript">
+		
+		var trunky = document.getElementById("trunk");
+
+	var leafArea = document.getElementById("leaves-space");
+		
+		// String urltext = "https://www.pinclipart.com/picdir/middle/6-61361_leaves-leaf-free-download-clip-art-on-clipart.png";
+
+
+
+		function addLeaf(){
+		var leaf = document.createElement("leaves");
+		 var angle = Math.floor((Math.random() * 360) + 1);
+		leaf.style.width = "100px";
+		leaf.style.height = "100px";
+		leaf.style.position = "absolute";
+		leaf.backgroundImage = "url(https://www.pinclipart.com/picdir/middle/6-61361_leaves-leaf-free-download-clip-art-on-clipart.png)";
+		leaf.style.transform = "rotate(" + angle + "deg)";
+		leafArea.appendChild(leaf);
+		}
+
+		trunky.addEventListener("click", addLeaf);
+
+</script>
+
+</body>
+</html>
