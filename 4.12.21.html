@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#gunks{
+			width:300px;
+			height:300px;
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+
+	<center><h2>Will's Favorite routes in the Gunks</h2>
+
+		<div id="gunks"></div>
+
+	</center>
+
+	<script type="text/javascript">
+		var box = document.getElementById("gunks");
+
+
+		var routes = ["ozone", "high exposure", "modern times", "brozone", "the sting", "supper's ready", "directissima"];
+
+		
+
+		box.addEventListener("click", function(){
+			var randomNumber = Math.round(6*Math.random())
+			console.log(randomNumber);
+
+
+		})
+
+
+	</script>
+
+</body>
+</html>
