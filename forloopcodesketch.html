@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>i have been mustachioed</title>
+</head>
+
+<style type="text/css">
+	
+	body{
+/*		background-color:blueviolet;*/
+	}
+	h1{
+		font-style:italic;
+		font-family:Cardo;
+		font-weight:15;
+	}
+
+	.twisty{
+		background-color:pink;
+		width:350px;
+		height:198px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		display:inline-block;
+		margin:5px;
+		background-image: url(candaceTwisted.jpeg);
+		font-style:bold;
+	}
+	.candace{
+/*		background-color:pink;*/
+		width:350px;
+		height:198px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		display:inline-block;
+		margin:5px;
+		font-size:200%;
+		text-align:right;
+		background-image: url(candaceflynn.jpeg);
+		font-style:bold;
+		opacity:2;
+		animation:bounce 1s;
+
+
+	}
+
+.candace:hover{
+	background-image:url(candaceTwisted.jpeg);
+	transition-duration:1.2s;	
+
+}
+ 	#code{
+ 		font-style:italic;
+ 		padding-bottom:25px;
+ 	}
+	/* candaceflynn.jpeg*/
+
+</style>
+<body>
+<center><h1> hairy lady scares spoon</h1></center>
+<center><div id = "code">can you decipher the numeric code?</div></center>
+	
+</body>
+
+
+<script type="text/javascript">
+
+	 // 1. make a div//
+ //2. give that div a class so that the div gets the styling// 
+ //3. put this div in the body with this class in the body//
+
+function makeCandace(input){
+
+ 	var vanessa = document.createElement("div");
+ 	vanessa.classList.add("candace");
+ 	document.body.appendChild(vanessa);
+ 	vanessa.innerText= input
+ 	var x = ["moooom!", "phineas", "and", "ferb", "mustachioed", "me!"]; 
+ }
+
+
+ 	for(var i=0; i=70; i =i+ 13.1513){makeCandace(i);
+}
+
+  function createCandace(){
+
+   	var vanessa = document.createElement("div");
+   	vanessa.classList.add("candace");
+   	document.body.appendChild(vanessa);
+   	
+   }
+
+ document.addEventListener("click", createCandace);
+
+
+// function checkKey(e) {
+
+//     e = e || window.event;
+
+//     if (e.keyCode == '38') {
+//     		var twisty = document.createElement("div");
+//     		document.body.appendChild(uhOh);
+//     	 	uhOh.classList.add("twisty");
+//         // up arrow
+//     }
+//     else if (e.keyCode == '40') {
+//         // down arrow
+//     }
+//     else if (e.keyCode == '37') {
+//        // left arrow
+//     }
+//     else if (e.keyCode == '39') {
+//        // right arrow
+//     }
+
+// }
+ 	// var bugs = document.createElement("div");
+ 	// document.body.appendChild(bugs);
+ 	// bugs.style.width = "200px";
+ 	// bugs.style.height = "200px";
+ 	// bugs.style.backgroundRepeat = "no-repeat";
+ 	// bugs.style.display = "inline-block";
+ 	// bugs.style.backgroundImage = "url(https://animationreview.files.wordpress.com/2013/03/rabbit-hood-c2a9-warner-brothers.jpg)";
+
+ 	// bugs.style.backgroundSize = "contain";
+
+ 	;
+ 	// vanessa.classList.add("candace");
+ 	// document.body.appendChild(vanessa);
+
+ 
+
+
+
+
+	
+ 
+//  setInterval(makeCandace(), 5000);
+
+// function ayCaramba(){
+//  	var twistedCandace = document.createElement("div");
+//  	twistedCandace.classList.add("twisty");
+// 	 document.appendChild(twistedCandace);
+
+// 	 var body = document.getElementById("body");
+// 	body.addEventListener("click", ayCaramba); 
+// 	}
+
+
+//candaceTwisted.jpeg
+
+ </script>
+
+
+</html>
