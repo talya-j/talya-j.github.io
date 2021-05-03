@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#food{
+			width:200px;
+			height:200px;
+			border:1px solid black;
+		}
+
+		.pie{
+			background-image:url(pizza.png);
+			width:200px;
+			height:200px;
+			background-size:contain;
+			position:absolute;
+
+		}
+
+		.calzone{
+				background-image:url(calzone.jpg);
+			width:200px;
+			height:200px;
+			background-size:contain;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+
+<center>
+
+	<!-- <div id="food"></div> -->
+
+</center>
+
+<script type="text/javascript">
+
+	function makeBox(x){
+		var square = document.createElement("div");
+		document.body.appendChild(square);
+		square.classList.add("pie");
+		square.style.left = x.clientX -100 + "px";
+		square.style.top = x.clientY-100 + "px";
+		console.log(x);
+		console.log(x.clientX, x.clientY)
+
+
+	}
+
+	function makeCircle(x){
+var circle = document.createElement("div");
+		document.body.appendChild(circle);
+		circle.classList.add("calzone");
+		circle.style.left = x.clientX -100 + "px";
+		circle.style.top = x.clientY-100 + "px";
+		console.log(x);
+		console.log(x.clientX, x.clientY)
+
+
+	}
+
+
+	var counter = 0;
+	// var box = document.getElementById('food');
+
+	document.addEventListener("click", function(){
+		console.log(counter = counter+ 1);
+		if (counter%2==0){console.log("even");
+makeBox(event);
+		 // box.style.backgroundImage="url(pizza.png)"
+
+		}
+		if (counter%2==1){console.log("odd"); makeCircle(event);
+			
+
+		}
+
+
+		// if(console.log=("even")){var pizza = document.createElement("div");
+ 	// pizza.classList.add("pie");
+ 	// document.body.appendChild(pizza);
+ 	//  else if console.log=("odd"){(
+ 	// 	var yummy = document.createElement("div");
+ 	// pizza.classList.add("calzone");
+ 	// document.body.appendChild(yummy);}
+
+		// if (counter + 1)/2 has a remainder of 1, then it is odd. If it has a remainder of 0, then it is even. 
+	}
+// }
+)
+</script>
+</body>
+</html>
