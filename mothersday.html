@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<center><h1>benim annem</h1></center>
+<body>
+
+	<style type="text/css">
+
+		h1{
+			margin:0 auto;
+			font size:140%;
+			font-style:italic;
+
+		}
+		body{ 
+			background-color:lavender;
+
+		}
+
+	#welcome{
+		text-align:center;
+		padding-top:10px;
+		padding-bottom:15px;
+	}
+
+	#mysteryBox{
+		height:400px;
+		width:200px;
+		background-color:lightgrey;
+		margin: 0 auto;
+
+	}
+
+	.message{
+		position:absolute;
+		width:200px;
+		height:200px;
+	}
+
+/*#woah{
+	position:absolute;
+	margin-left: 2;
+	margin-bottom:1000;
+}*/
+	</style>
+
+
+
+<div id = "welcome"> welcome! to the wildest mothers day card of your imagination. and also possibly not wildest. we'll have to see...</div>
+
+<!-- <div id = "mysteryBox">ahh</div> -->
+
+</body>
+
+<script type="text/javascript">
+
+	var messages= ["love you", "mwah", "i'm pregnant, mrs. hughes", "...AND i'm havin a baybeh!", "happy hogwarts birthday...jk mother's day", "thank you for being yourself", "thanks for putting up with us :)", "#slen", "sam wishes you happy mothers day also..probably. (I mean, we are at the point of sharing family photos, so it's inevitable...", "feliz cumpleanos a (ti? o usted?) yo no se pa!", "thanks for being the best mother ever!", "thanks for your music reccomendations!", "thank you for taking care of me when I am sick/have a crook neck :/", "your favorite color is...black?", "noémie! she is...a producer now!", "I indentify most with carson, of course—and you're a regular lady downton?", "i love playing chess with you", "grogu likes me better...actually, it's mother's day: grogu likes us both equally", "i love walking on the beach with you", "BOO! (did I scare you?)","mwah-zies!", "#brusselsBros" ];
+
+	
+
+ 
+
+ document.addEventListener("click", 
+	function makeText(event){
+		var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+// document.body.style.backgroundColor = "#" + randomColor;
+//   color.innerHTML = "#" + randomColor;
+
+		var randomNumber = Math.floor(Math.random() * messages.length);
+
+		var text = document.createElement("div");
+		document.body.appendChild(text);
+		 text.classList.add("message");
+		 text.style.color = "#" + randomColor;
+  
+
+		text.style.left = event.clientX -50 + "px";
+		text.style.top = event.clientY  + "px";
+		// console.log(x);
+		// console.log(x.clientX, x.clientY);
+
+	
+
+	var cutesyMessage  = messages[randomNumber];
+
+	console.log(Math.floor(Math.random()* messages.length));
+
+	document.body.appendChild(text);
+	text.innerText = cutesyMessage;
+
+
+	}
+);
+</script>
+<!-- <div id = "woah"><a = href="https://open.spotify.com/playlist/1ObcnE78cYls4mnDGK0V53?si=5a2f190ea21846a0">remember?</a></div>
+ --></html>
