@@ -78,8 +78,6 @@
 		var zoltar = document.getElementById("message")
 		
 		var pageBox = document.getElementById("turnPage")
-	
-
 
 		var sasiness = ["wait, you wanted a fortune?", 
 		"you will get poor sleep at some point in the future", "I sense much anger in you. or perhaps kindness. people are confusing", "you will drink water today", "you think, therefore you are", "i'm going to go out on a limb here and say you're having a bad day. actually, bad is an understatement. you're having a terrible, horrible, no-good-very-bad day. and I know why, too: mercury is in gatorate", "I have a feeling that you will go home today at some point maybe", "right now, you're thinking about how terrible of a fortune teller I am. and you know what, that's okay", "you make WAY too many playlists on spotify for no reason. (and if not on spotify, even worse. spotify is king)", "you're going to dye your hair",  "you've never gotten to see one of those zoltar machines before, and you are now realizing that you haven't truly lived until you do", "your favorite color is green", "you only wear primary colors", "you listen to 'underground artists' but pull up wtih tame impala and the smiths (although we love the smiths. always.)", "your favorite animal is the elephant", "you will interact with a dog in the next year", "you probably enjoy dancing by yourself, and that's great", "paste this link in your browser for a surprise :) [https://www.youtube.com/watch?v=dQw4w9WgXcQ]", "fortune shmortune" ];
@@ -87,8 +85,6 @@
 		// var blank = "  ";
 
 			function changeUp(){
-
-
 			var randomNumber = Math.floor(Math.random() * sasiness.length);
 
 			var fortunetext  = sasiness[randomNumber];
@@ -98,12 +94,6 @@
 				zoltar.innerText = fortunetext;
 
 		}
-
-				// function remove(){
-				// 	window.location.reload();
-
-				// }
-
 			fortune.addEventListener("click", changeUp);
 			pageBox.addEventListener("click", changeUp);
 				

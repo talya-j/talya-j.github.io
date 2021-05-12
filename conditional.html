@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conditionals Codesketch</title>
+</head>
+<h1>to be, or not to be?</h1>
+<h2>* --upArrow-- = yes,  --spacebar-- = no*</h2>
+<style type="text/css">
+	h1{
+		font-style:italic;
+		text-align:center;
+		font-size:175%;
+	}
+
+	h2{
+text-align:center;
+		font-size:85%;
+	}
+
+
+	body{
+
+		background-color: plum;
+	}
+
+	.twobe{
+		height:200px;
+		width:200px;
+		background-image:url(pencil.jpg);
+		background-size:contain;
+		background-repeat:no-repeat;
+		display:inline-block;
+		margin:5px;
+	}
+
+	.broken{
+		height:200px;
+		width:200px;
+		background-image:url(brokenpencil.jpg);
+		background-size:contain;
+		background-repeat:no-repeat;
+		display:inline-block;
+		margin:5px;
+	}
+
+</style>
+
+<body>
+
+
+</body>
+<!-- brokenpencil.jpg -->
+<script type="text/javascript">
+	
+	function makePencil(){
+		// var smurf = 
+                           
+		var pencil = document.createElement("div");
+		pencil.classList.add("twobe");
+		document.body.appendChild(pencil);
+	}
+
+	function breakPencil(){
+		var ouch = document.createElement("div");
+		ouch.classList.add("broken");
+		document.body.appendChild(ouch);
+	}
+ 
+
+
+document.addEventListener('keyup', event => {
+  if (event.code === 'Space') {
+    console.log('Space pressed');
+
+ setInterval(breakPencil, 1000);
+
+	} else {
+		setInterval(makePencil, 1000);
+
+	}
+})
+		
+
+
+
+
+</script>
+
+</html>

@@ -57,11 +57,7 @@
 
 <script type="text/javascript">
 
-	var messages= ["love you", "mwah", "i'm pregnant, mrs. hughes", "...AND i'm havin a baybeh!", "happy hogwarts birthday...jk mother's day", "thank you for being yourself", "thanks for putting up with us :)", "#slen", "sam wishes you happy mothers day also..probably. (I mean, we are at the point of sharing family photos, so it's inevitable...", "feliz cumpleanos a (ti? o usted?) yo no se pa!", "thanks for being the best mother ever!", "thanks for your music reccomendations!", "thank you for taking care of me when I am sick/have a crook neck :/", "your favorite color is...black?", "noémie! she is...a producer now!", "I indentify most with carson, of course—and you're a regular lady downton?", "i love playing chess with you", "grogu likes me better...actually, it's mother's day: grogu likes us both equally", "i love walking on the beach with you", "BOO! (did I scare you?)","mwah-zies!", "#brusselsBros" ];
-
-	
-
- 
+	var messages= ["love you", "mwah", "i'm pregnant, mrs. hughes", "...AND i'm havin a baybeh!", "happy hogwarts birthday...jk mother's day", "thank you for being yourself", "thanks for putting up with us :)", "#slen", "sam wishes you happy mothers day also..probably. (I mean, we are at the point of sharing family photos, so it's inevitable...", "feliz cumpleanos a (ti? o usted?) yo no se pa!", "thanks for being the best mother ever!", "thanks for your music reccomendations!", "thank you for taking care of me when I am sick/have a crook neck :/", "your favorite color is...black?", "noémie! she is...a producer now!", "I indentify most with carson, of course—and you're a regular lady downton?", "i love playing chess with you", "grogu likes me better...actually, it's mother's day: grogu likes us both equally", "i love walking on the beach with you", "BOO! (did I scare you?)","mwah-zies!", "#brusselsBros" ]; 
 
  document.addEventListener("click", 
 	function makeText(event){
@@ -76,14 +72,8 @@
 		document.body.appendChild(text);
 		 text.classList.add("message");
 		 text.style.color = "#" + randomColor;
-  
-
 		text.style.left = event.clientX -50 + "px";
 		text.style.top = event.clientY  + "px";
-		// console.log(x);
-		// console.log(x.clientX, x.clientY);
-
-	
 
 	var cutesyMessage  = messages[randomNumber];
 
