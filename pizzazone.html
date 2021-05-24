@@ -72,8 +72,6 @@
 		square.style.top = x.clientY-100 + "px";
 		console.log(x);
 		console.log(x.clientX, x.clientY)
-
-
 	}
 
 	function makeCircle(x){
@@ -84,26 +82,18 @@ var circle = document.createElement("div");
 		circle.style.top = x.clientY-100 + "px";
 		console.log(x);
 		console.log(x.clientX, x.clientY)
-
-
 	}
-
-
 	var counter = 0;
-	// var box = document.getElementById('food');
 
 	document.addEventListener("click", function(){
 		console.log(counter = counter+ 1);
 		if (counter%2==0){console.log("even");
 makeBox(event);
-		 // box.style.backgroundImage="url(pizza.png)"
 
 		}
 		if (counter%2==1){console.log("odd"); makeCircle(event);
-			
-
 		}
-
+		// if (counter + 1)/2 has a remainder of 1, then it is odd. If it has a remainder of 0, then it is even. 
 
 		// if(console.log=("even")){var pizza = document.createElement("div");
  	// pizza.classList.add("pie");
@@ -113,7 +103,7 @@ makeBox(event);
  	// pizza.classList.add("calzone");
  	// document.body.appendChild(yummy);}
 
-		// if (counter + 1)/2 has a remainder of 1, then it is odd. If it has a remainder of 0, then it is even. 
+
 	}
 // }
 )
